@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Emprego</title>
 </head>
 <body>
@@ -19,35 +20,36 @@
     <h4><font face="arial">* Vale transporte</font></h4>
     <h4><font face="arial">* Planos de cargos e salários</font></h4>
     <h4><font face="arial"><b>* Salário a combinar</b></font></h4>
-    <form>
+    <form action= "http://curvello.com/yoda.php" method="POST"> 
     <fieldset>
         <legend><font face="arial">Formulário de inscrição</font></legend>
         <br>
             <labelfor="Nome"><font face="arial">Nome</font></label><br>
             <p><input name="Nome"placeholder="Digite seu nome"></p>
             <p><labelfor="Sexo"><font face="arial">Sexo</font></label><br><p>
-            <input type="radio" name="nome" value="M"><font face="arial">Masculino</font><br>
-            <input type="radio" name="nome" value="F"><font face="arial">Feminino</font><br>
-            <p><label="Endereço"><font face="arial">Endreço</font></label><p>
+            <input type="radio" name="Sexo" value="M"><font face="arial">Masculino</font><br>
+            <input type="radio" name="Sexo" value="F"><font face="arial">Feminino</font><br>
+           <p><labelfor="data"><font face="arial">Data de Nascimento</font></label><br>
+            <input type="date" name="Data de nascimento">
+            <p><labelfor="Endereço"><font face="arial">Endereço</font></label><p>
             <select>
                 <option value="Rua"><font face="arial">Rua</font></option>
                 <option value="Av."><font face="arial">Avenida</font></option>
                 <option value="Estrada"><font face="arial">Estrada</font></option>
-                <option value="Beco"><font face="arial"><Beco</font></option>
+                <option value="Beco"><font face="arial">Beco</font></option>
             </select> 
-            <input for= "Endereço" placeholder="Digite o endereço">
-            <input for= "Número" placeholder="Digite o número">
-            <input for= "Complemento" placeholder="Complemento">
-            <p><labelfor="Telefone"><font face="arial">Telefone para contato</font></label>
+            <input name= "Endereço" placeholder="Digite o endereço">
+            <input name= "Número" placeholder="Digite o número">
+            <input name= "Complemento" placeholder="Complemento">
+            <p><label for="Telefone"><font face="arial">Telefone para contato</font></label>
             <br>
-            <input type="tel"name="nome">
-            <p><label="E-mail"><font face="arial">E-mail</font></label><p>
-            <input for= "E-mail" placeholder="Digite o seu e-mail">
-            <br>
-            <br>
-            <input type="submit"name="nome"><post></post>
+            <input type="tel"name="Telefone" pattern"\([0-9]{2})\[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">
+            <p><label for="email"><font face="arial">E-mail</font></label><br>
+            <input type= "email" name="E-mail" id="E-mail" placeholder="Digite o seu e-mail"><br>
+            <input type="submit"name="Clique aqui para realizar a sua inscrição">
             
 </fieldset>    
-</form action= "http://curvello.com/yoda.php" method="POST">  
+</form>
 </body>
+
 </html>
